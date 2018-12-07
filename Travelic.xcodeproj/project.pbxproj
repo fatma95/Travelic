@@ -14,6 +14,8 @@
 		F4DFBCB021BB33DB00EAC7EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4DFBCAE21BB33DB00EAC7EC /* LaunchScreen.storyboard */; };
 		F4DFBCBB21BB33DB00EAC7EC /* TravelicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFBCBA21BB33DB00EAC7EC /* TravelicTests.swift */; };
 		F4DFBCC621BB33DB00EAC7EC /* TravelicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFBCC521BB33DB00EAC7EC /* TravelicUITests.swift */; };
+		F4DFBCD621BB350600EAC7EC /* TravelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFBCD521BB350600EAC7EC /* TravelModel.swift */; };
+		F4DFBCD821BB351000EAC7EC /* TravelFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFBCD721BB351000EAC7EC /* TravelFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		F4DFBCC121BB33DB00EAC7EC /* TravelicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DFBCC521BB33DB00EAC7EC /* TravelicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelicUITests.swift; sourceTree = "<group>"; };
 		F4DFBCC721BB33DB00EAC7EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4DFBCD521BB350600EAC7EC /* TravelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelModel.swift; sourceTree = "<group>"; };
+		F4DFBCD721BB351000EAC7EC /* TravelFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		F4DFBCA421BB33DA00EAC7EC /* Travelic */ = {
 			isa = PBXGroup;
 			children = (
+				F4DFBCD321BB34D200EAC7EC /* Model */,
 				F4DFBCA521BB33DA00EAC7EC /* AppDelegate.swift */,
 				F4DFBCA721BB33DA00EAC7EC /* ViewController.swift */,
 				F4DFBCA921BB33DA00EAC7EC /* Main.storyboard */,
@@ -123,6 +128,23 @@
 				F4DFBCC721BB33DB00EAC7EC /* Info.plist */,
 			);
 			path = TravelicUITests;
+			sourceTree = "<group>";
+		};
+		F4DFBCD321BB34D200EAC7EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4DFBCD421BB34E200EAC7EC /* Travel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F4DFBCD421BB34E200EAC7EC /* Travel */ = {
+			isa = PBXGroup;
+			children = (
+				F4DFBCD521BB350600EAC7EC /* TravelModel.swift */,
+				F4DFBCD721BB351000EAC7EC /* TravelFunctions.swift */,
+			);
+			path = Travel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4DFBCD621BB350600EAC7EC /* TravelModel.swift in Sources */,
 				F4DFBCA821BB33DA00EAC7EC /* ViewController.swift in Sources */,
 				F4DFBCA621BB33DA00EAC7EC /* AppDelegate.swift in Sources */,
+				F4DFBCD821BB351000EAC7EC /* TravelFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
