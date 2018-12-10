@@ -13,11 +13,16 @@ class TravelFunctions {
         
     }
     
-    static func readTrips() {
-        if Data.tripModels.count == 0 {
-            Data.tripModels.append(TravelModel(title: "Travel to Dubai!"))
-            Data.tripModels.append(TravelModel(title: "Travel to London!"))
-            Data.tripModels.append(TravelModel(title: "Travel to Dahab!"))
+    static func readTrips(completion: @escaping () -> ()) {
+        DispatchQueue.global(qos: .userInteractive).async {
+            if Data.tripModels.count == 0 {
+                Data.tripModels.append(TravelModel(title: "Travel to Dubai!"))
+                Data.tripModels.append(TravelModel(title: "Travel to London!"))
+                Data.tripModels.append(TravelModel(title: "Travel to Dahab!"))
+            }
+        }
+        DispatchQueue.main.async {
+            completion()
         }
         
     }
